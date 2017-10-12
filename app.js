@@ -6,7 +6,7 @@ const app = express();
 
 // TODO: Enter the path to your service account json file
 // Need help with this step go here: https://firebase.google.com/docs/admin/setup
-const serviceAccount = require("C:\Users\MattWilliams\Documents\GitHub\madden-project-67765-firebase-adminsdk-q66tt-1f524be91b.json");
+const serviceAccount = require("C:/Users/MattWilliams/Documents/GitHub/madden-project-67765-firebase-adminsdk-q66tt-1f524be91b.json");
 
 // TODO: Enter your database url from firebase
 admin.initializeApp({
@@ -70,12 +70,12 @@ app.post('/:platform/:leagueId/week/:weekType/:weekNumber/:dataType', (req, res)
   const {platform, leagueId, weekType, weekNumber, dataType} = req.params;
   const dataRef = ref.child(`data/${platform}/${leagueId}/week/${weekType}/${weekNumber}/${dataType}`);
 
-  // method=POST path="/platform/leagueId/week/reg/1/defense"
-  // method=POST path="/platform/leagueId/week/reg/1/kicking"
-  // method=POST path="/platform/leagueId/week/reg/1/passing"
-  // method=POST path="/platform/leagueId/week/reg/1/punting"
-  // method=POST path="/platform/leagueId/week/reg/1/receiving"
-  // method=POST path="/platform/leagueId/week/reg/1/rushing"
+  method=POST path="/platform/leagueId/week/reg/1/defense"
+  method=POST path="/platform/leagueId/week/reg/1/kicking"
+  method=POST path="/platform/leagueId/week/reg/1/passing"
+  method=POST path="/platform/leagueId/week/reg/1/punting"
+  method=POST path="/platform/leagueId/week/reg/1/receiving"
+  method=POST path="/platform/leagueId/week/reg/1/rushing"
 
   switch(dataType) {
     case 'schedules':
