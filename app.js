@@ -70,12 +70,12 @@ app.post('/:platform/:leagueId/week/:weekType/:weekNumber/:dataType', (req, res)
   const {platform, leagueId, weekType, weekNumber, dataType} = req.params;
   const dataRef = ref.child(`data/${platform}/${leagueId}/week/${weekType}/${weekNumber}/${dataType}`);
 
-  // method=POST path="/platform/leagueId/week/reg/1/defense"
-  // method=POST path="/platform/leagueId/week/reg/1/kicking"
-  // method=POST path="/platform/leagueId/week/reg/1/passing"
-  // method=POST path="/platform/leagueId/week/reg/1/punting"
-  // method=POST path="/platform/leagueId/week/reg/1/receiving"
-  // method=POST path="/platform/leagueId/week/reg/1/rushing"
+  method=POST path="/platform/leagueId/week/reg/1/defense"
+  method=POST path="/platform/leagueId/week/reg/1/kicking"
+  method=POST path="/platform/leagueId/week/reg/1/passing"
+  method=POST path="/platform/leagueId/week/reg/1/punting"
+  method=POST path="/platform/leagueId/week/reg/1/receiving"
+  method=POST path="/platform/leagueId/week/reg/1/rushing"
 
   switch(dataType) {
     case 'schedules':
